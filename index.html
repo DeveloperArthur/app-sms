@@ -1,6 +1,28 @@
+
+<!DOCTYPE html>
 <html>
-<header><title>This is title</title></header>
-<body>
-Hello world
-</body>
+	<header>
+		<title>app-sms</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</header>
+	<body>
+		<h1>App SMS</h1>
+		<h3>Aplicação para envio instantâneo de SMS</h3>
+		<p>Número do destinatário (com DDD)</p>
+		<input type="text" id="destinatario">
+		<p>Mensagem</p>
+		<textarea id="mensagem" rows="10" cols="40"></textarea>
+		<br>
+		<button onclick="envia()">Enviar</button>
+		<br>
+		<br>
+		<h3>Validar token</h3>
+		<input type="text" id="token">
+		<button onclick="validarToken()">Validar</button>
+		<h4 style="color: green;" id="resultadoValidacaoValido"></h4>
+		<h4 style="color: red;" id="resultadoValidacaoInvalido"></h4>
+		<p>Desenvolvido por Arthur</p>
+		<script src="js/envia.js"></script>
+		<script src="js/token.js"></script>
+	</body>
 </html>
